@@ -1,0 +1,10 @@
+https://docs.smith.langchain.com/
+https://docs.smith.langchain.com/user_guide
+https://docs.smith.langchain.com/setup
+https://docs.smith.langchain.com/pricing
+https://docs.smith.langchain.com/category/self-hosting
+https://docs.smith.langchain.com/self_hosting/kubernetes
+https://docs.smith.langchain.com/self_hosting/docker
+https://docs.smith.langchain.com/self_hosting/usage
+https://docs.smith.langchain.com/self_hosting/release_notes
+https://docs.smith.langchain.com/tracing

@@ -1,0 +1,78 @@
+Traceback (most recent call last):
+  File "/var/folders/3q/ldkqkq893hg7gbtxzm7fl_mr0000gn/T/ipykernel_63297/212717126.py", line 8, in <module>
+    result = qa.run({"query": question})
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/rakeshrathod/anaconda3/envs/LLM/lib/python3.11/site-packages/langchain_core/_api/deprecation.py", line 145, in warning_emitting_wrapper
+    return wrapped(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/rakeshrathod/anaconda3/envs/LLM/lib/python3.11/site-packages/langchain/chains/base.py", line 538, in run
+    return self(args[0], callbacks=callbacks, tags=tags, metadata=metadata)[
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/rakeshrathod/anaconda3/envs/LLM/lib/python3.11/site-packages/langchain_core/_api/deprecation.py", line 145, in warning_emitting_wrapper
+    return wrapped(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/rakeshrathod/anaconda3/envs/LLM/lib/python3.11/site-packages/langchain/chains/base.py", line 363, in __call__
+    return self.invoke(
+           ^^^^^^^^^^^^
+  File "/Users/rakeshrathod/anaconda3/envs/LLM/lib/python3.11/site-packages/langchain/chains/base.py", line 162, in invoke
+    raise e
+  File "/Users/rakeshrathod/anaconda3/envs/LLM/lib/python3.11/site-packages/langchain/chains/base.py", line 156, in invoke
+    self._call(inputs, run_manager=run_manager)
+  File "/Users/rakeshrathod/anaconda3/envs/LLM/lib/python3.11/site-packages/langchain/chains/retrieval_qa/base.py", line 144, in _call
+    answer = self.combine_documents_chain.run(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/rakeshrathod/anaconda3/envs/LLM/lib/python3.11/site-packages/langchain_core/_api/deprecation.py", line 145, in warning_emitting_wrapper
+    return wrapped(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/rakeshrathod/anaconda3/envs/LLM/lib/python3.11/site-packages/langchain/chains/base.py", line 543, in run
+    return self(kwargs, callbacks=callbacks, tags=tags, metadata=metadata)[
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/rakeshrathod/anaconda3/envs/LLM/lib/python3.11/site-packages/langchain_core/_api/deprecation.py", line 145, in warning_emitting_wrapper
+    return wrapped(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/rakeshrathod/anaconda3/envs/LLM/lib/python3.11/site-packages/langchain/chains/base.py", line 363, in __call__
+    return self.invoke(
+           ^^^^^^^^^^^^
+  File "/Users/rakeshrathod/anaconda3/envs/LLM/lib/python3.11/site-packages/langchain/chains/base.py", line 162, in invoke
+    raise e
+  File "/Users/rakeshrathod/anaconda3/envs/LLM/lib/python3.11/site-packages/langchain/chains/base.py", line 156, in invoke
+    self._call(inputs, run_manager=run_manager)
+  File "/Users/rakeshrathod/anaconda3/envs/LLM/lib/python3.11/site-packages/langchain/chains/combine_documents/base.py", line 136, in _call
+    output, extra_return_dict = self.combine_docs(
+                                ^^^^^^^^^^^^^^^^^^
+  File "/Users/rakeshrathod/anaconda3/envs/LLM/lib/python3.11/site-packages/langchain/chains/combine_documents/refine.py", line 152, in combine_docs
+    res = self.initial_llm_chain.predict(callbacks=callbacks, **inputs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/rakeshrathod/anaconda3/envs/LLM/lib/python3.11/site-packages/langchain/chains/llm.py", line 293, in predict
+    return self(kwargs, callbacks=callbacks)[self.output_key]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/rakeshrathod/anaconda3/envs/LLM/lib/python3.11/site-packages/langchain_core/_api/deprecation.py", line 145, in warning_emitting_wrapper
+    return wrapped(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/rakeshrathod/anaconda3/envs/LLM/lib/python3.11/site-packages/langchain/chains/base.py", line 363, in __call__
+    return self.invoke(
+           ^^^^^^^^^^^^
+  File "/Users/rakeshrathod/anaconda3/envs/LLM/lib/python3.11/site-packages/langchain/chains/base.py", line 162, in invoke
+    raise e
+  File "/Users/rakeshrathod/anaconda3/envs/LLM/lib/python3.11/site-packages/langchain/chains/base.py", line 156, in invoke
+    self._call(inputs, run_manager=run_manager)
+  File "/Users/rakeshrathod/anaconda3/envs/LLM/lib/python3.11/site-packages/langchain/chains/llm.py", line 103, in _call
+    response = self.generate([inputs], run_manager=run_manager)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/rakeshrathod/anaconda3/envs/LLM/lib/python3.11/site-packages/langchain/chains/llm.py", line 115, in generate
+    return self.llm.generate_prompt(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/rakeshrathod/anaconda3/envs/LLM/lib/python3.11/site-packages/langchain_core/language_models/llms.py", line 568, in generate_prompt
+    return self.generate(prompt_strings, stop=stop, callbacks=callbacks, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/rakeshrathod/anaconda3/envs/LLM/lib/python3.11/site-packages/langchain_core/language_models/llms.py", line 741, in generate
+    output = self._generate_helper(
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/rakeshrathod/anaconda3/envs/LLM/lib/python3.11/site-packages/langchain_core/language_models/llms.py", line 605, in _generate_helper
+    raise e
+  File "/Users/rakeshrathod/anaconda3/envs/LLM/lib/python3.11/site-packages/langchain_core/language_models/llms.py", line 592, in _generate_helper
+    self._generate(
+  File "/Users/rakeshrathod/anaconda3/envs/LLM/lib/python3.11/site-packages/langchain_community/llms/huggingface_pipeline.py", line 227, in _generate
+    text = response["generated_text"][len(batch_prompts[j]) :]
+           ~~~~~~~~^^^^^^^^^^^^^^^^^^
+KeyError: 'generated_text'

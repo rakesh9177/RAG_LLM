@@ -1,0 +1,21 @@
+#HuggingFace Hub connection
+
+HUGGINGFACEHUB_API_TOKEN : ""
+
+
+# Embedding Model details
+
+Embedding_model_path : "sentence-transformers/all-MiniLM-l6-v2"
+
+model_kwargs: {'device': 'cpu'}
+
+encode_kwargs : {'normalize_embeddings': False}
+
+
+# LLM configuration details from hugging face
+
+llm_model_name : "facebook/blenderbot-400M-distill"
+
+llm_model_id : "gpt2"
+
+
